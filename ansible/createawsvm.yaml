@@ -9,7 +9,7 @@
     ec2_group:
       name: websg
       description: web server security Group
-      vpc_id: vpc-019812aa4e730c9fe
+      vpc_id: vpc-039376dc0c706fe4c
       region: us-east-1
       rules:
         - proto: tcp
@@ -24,7 +24,7 @@
     ec2_instance:
       name: "my_webserver"
       key_name: my_keypair
-      vpc_subnet_id: subnet-005e50af3e7c14687
+      vpc_subnet_id: subnet-04ad38f3bf771448a
       instance_type: t2.micro
       security_group: websg
       network:
